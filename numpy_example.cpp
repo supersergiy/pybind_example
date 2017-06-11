@@ -36,7 +36,7 @@ double sum(py::array xs) {
     return s;
 }
 
-PYBIND11_MODULE(code, m) {
+PYBIND11_MODULE(numpy_example, m) {
     m.def("sum", &sum);
     m.def("twice", &twice);
 }

@@ -1,6 +1,13 @@
-import numpy_example
+import code
 import numpy as np
 
-a = np.array([1,2,3], dtype=np.float)
-numpy_example.twice(a)
-print a
+
+if __name__ == '__main__':
+    xs = np.arange(12).reshape(3,4).astype('float')
+    print(xs)
+    print("np :", xs.sum())
+    print("cpp:", code.sum(xs))
+
+    print()
+    code.twice(xs)
+    print(xs)
